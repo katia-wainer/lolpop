@@ -1,0 +1,166 @@
+@font-face {
+  font-family: "robinson";
+  src: url(/robinson-regular-trial-webfont.woff);
+}
+@font-face {
+  font-family: "robinson-light";
+  src: url(/Robinson-Light-Trial.otf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background: #faf9f6;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
+#logo {
+  width: 70px;
+  height: 70px;
+  margin-top: 20px;
+  margin-left: 25px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 100px;
+  padding: 100px;
+}
+.container .scope {
+  background: rgba(148, 37, 33, 0.8);
+  padding: 8px;
+}
+
+.heading {
+  font-size: 6rem;
+  letter-spacing: 10px;
+  font-family: "robinson-light";
+  font-weight: 50px;
+}
+
+.subtiltle {
+  font-size: 2rem;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 700;
+  padding: 20px;
+  position: absolute;
+  top: 350px;
+  left: 85px;
+}
+
+.my-work .work {
+  margin-top: 100px;
+}
+.my-work .work p {
+  padding: 10px;
+}
+
+.about {
+  letter-spacing: 1px;
+  color: #333;
+  line-height: 1.9;
+  font-size: 0.9rem;
+  text-align: left;
+  padding: 40px;
+  margin-top: 50px;
+}
+
+.goal {
+  font-size: 2rem;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.philosophy {
+  font-size: 2rem;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.about p {
+  padding: 5px;
+}
+
+.line {
+  border: 0.5px solid #333;
+  opacity: 0.5;
+  margin: 15px;
+  margin-left: -1px;
+  width: 745px;
+}
+
+.container-challenge {
+  letter-spacing: 1px;
+  color: #333;
+  line-height: 1.9;
+  font-size: 0.9rem;
+  text-align: left;
+  padding: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+  position: relative;
+  padding: 60px;
+  margin-top: 180px;
+}
+
+.challenge > h2 {
+  margin-left: 125px;
+}
+
+.challenge > p {
+  margin-left: 125px;
+}
+
+.solution > p {
+  margin-left: 70px;
+}
+
+.heading-2 {
+  font-size: 6rem;
+  letter-spacing: 10px;
+  font-family: "robinson-light";
+  font-weight: 50px;
+  font-size: 2.5rem;
+  padding: 35px;
+  margin-left: 80px;
+}
+
+.solution > h1 {
+  margin-left: 30px;
+}
+
+.lamp {
+  width: 200px;
+  position: absolute;
+  top: 2150px;
+  left: 1040px;
+}
+
+.box {
+  background: rgb(234, 233, 224);
+}
+
+#anim {
+  max-width: 1700px;
+}/*# sourceMappingURL=main.css.map */

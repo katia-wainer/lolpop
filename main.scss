@@ -1,0 +1,611 @@
+//variables
+$main-color: #faf9f6;
+$secondary-color:rgb(234,233,224);
+$light-color: #fffcfc;
+$dark-color: #333;
+$red:#A51D43;
+$green:#7e9638;
+$blue:rgb(34, 79, 97);
+
+
+@font-face {
+  font-family: 'robinson';
+  src: url(/robinson-regular-trial-webfont.woff);
+}
+@font-face{
+  font-family: 'robinson-light';
+  src: url(/Robinson-Light-Trial.otf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+    font-family: 'Work Sans', sans-serif;
+    line-height: 1.6;
+    color:$dark-color;
+    background:$main-color; 
+    overflow-x: hidden; 
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+// logo
+#logo {
+  max-width: 4.375rem;
+  min-height:4.375rem;
+  margin-top: 1.25rem;
+  margin-left:1.5625rem;
+}
+
+// grid hero section
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap:6.25rem;
+  padding: 6.25rem;
+  .work{
+    color: $blue;
+  }
+  .scope{
+    background:rgba($green,0.8);
+    padding: 0.5em;
+    
+    
+   }
+  
+}
+// text mixin
+@mixin text {
+    letter-spacing: 1px;
+    color: $blue;
+    line-height: 1.9;
+    font-size: 0.9rem;
+    text-align: left;
+    padding: 2.5rem;
+    
+  }
+  @mixin heading {
+    font-size: 6rem;
+    letter-spacing: 0.43rem;
+    font-family:'robinson-light';
+    font-weight: 3.12rem; 
+    color:$blue;
+  }
+  @mixin text-heading{
+    font-size: 2rem;
+    font-family:'Work Sans', sans-serif;
+    font-weight: 700;
+  }
+  .heading{
+    @include heading;
+
+  }
+  .subtiltle{
+    @include text-heading;
+    padding:1.25rem;
+    position: absolute;
+    top:21.87rem;
+    left:5.31rem;
+    color: $blue;
+  }
+
+  .my-work .work{
+    margin-top: 6.25rem;
+  
+    p{
+      padding: 0.625rem;
+    }
+  }
+  .about{
+  @include text;
+   margin-top: 3.125rem;
+   
+  }
+
+.goal{
+  @include text-heading;
+  font-size: 1.2rem;
+  
+}
+.philosophy{
+  @include text-heading;
+  font-size: 2rem;
+  font-family: 'robinson-light';
+  letter-spacing: 2px;
+  
+}
+.brand-goal{
+  position: absolute;
+  top:75rem;
+  left:29.37rem;
+  color: $green;
+
+  p{
+    font-size: 1.2rem;
+    line-height: 1.7;
+    text-align: center;
+    color: $blue;
+    
+  }
+}
+.line-2{
+    border: 0.1mm solid $blue;
+    opacity: 0.5;
+    margin:0.93rem;
+    margin-left:23.75rem;
+    max-width:59.37rem;
+    position: absolute;
+    top:87.5rem;
+}
+
+
+.about p{
+  padding:0.3125rem;
+  
+}
+
+
+//lines
+
+  .line{
+    border: 0.1mm solid $blue;
+    opacity: 0.5;
+    margin:0.9375rem;
+    margin-left:-0.0625rem;
+    max-width: 46.5625rem;
+    
+  }
+  
+//challenge section
+.container-challenge{
+  @include text;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 9.375rem;
+  position: relative;
+  padding: 3.125rem;
+  margin-top: 3.125rem;
+  
+
+}
+.challenge > h2{
+  margin-left: 7.8125rem;
+  margin-top: -0.625rem ;
+  
+}
+
+
+.challenge >p{
+  margin-left: 7.8125rem;
+  
+}
+
+
+.solution > p{
+  margin-left: 4.37rem;
+  margin-top: -0.625rem;
+  
+}
+
+
+.bold{
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+  .heading-2{
+    @include heading;
+    font-size:2.5rem;
+    padding: 2.1875rem;
+    margin-left: 5rem;
+    color: $green;
+  }
+ .solution > h1{
+  margin-left:1.875rem;
+ }
+
+
+.box{
+  background: $secondary-color;
+  min-height: 100%;
+  max-width: 100%;
+}
+
+#anim{
+  margin:auto;
+  max-width: 93.75rem;
+
+}
+
+#anim-2{
+  max-width: 50rem;
+  height: 68.75rem;
+  margin-left: -2rem;
+  margin-top: 6.25rem;
+  
+}
+
+
+.container-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.strategy p{
+  @include text;
+  margin-right: 12.5rem;
+  margin-top: -2.5rem;
+ margin-left: 6.25rem;
+  
+}
+
+.strategy > .heading-2{
+  margin-left: 6.25rem;
+  margin-top: 18.75rem;
+  margin-bottom: -1.5625rem;
+
+}
+
+.strategy{
+  margin-top: 12.5rem;
+}
+// place holde for mockup
+.place-holder1{
+  min-height: 60rem;
+  max-width: 107rem;   
+  background-image: url('/dist/img/לוגו\ התחלה\ קייס\ סטאדי3.png');
+  background-size:contain;
+  background-size:107.5rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  }
+  .place-holder2{
+  margin-top:6.25rem;
+  min-height: 60rem;
+  max-width: 107rem;   
+  background-size:contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  img{
+    min-width: 106.875rem;
+    z-index: 1;
+    margin: auto;
+  }
+  }
+
+  .place-holder4{
+   position: relative;
+
+   img{
+    position: absolute;
+    top:8.125rem;
+   }
+  }
+
+// dots on the slider area
+.dots{
+  position: relative;
+  margin-left:-0.625rem;
+
+  .dot-1{
+    min-width:1.5625rem;
+    min-height:1.5625rem;
+    z-index: 4;
+    border-radius: 50%;
+    background-color:$red ;
+    position: absolute;
+    top:-32.1875rem;
+    left: 71.875rem;
+    animation:animated-dots;
+    animation-duration: 3S;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+    animation-timing-function: ease-out;
+  }
+
+ @keyframes animated-dots {
+  from{opacity: 0%;}
+  to{opacity: 100%;}
+ }
+  .dot-2{
+    min-width:1.5625rem;
+    min-height:1.5625rem;
+    z-index: 4;
+    border-radius: 50%;
+    background-color:$red ;
+    position: absolute;
+    top:-35.625rem;
+    left:75rem;
+    animation:animated-dots;
+    animation-duration: 3S;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+    animation-timing-function: ease-out;
+  }
+  .dot-3{
+    min-width:1.5625rem;
+    min-height:1.5625rem;
+    z-index: 4;
+    border-radius: 50%;
+    background-color:$red ;
+    position: absolute;
+    top:-37.1875rem;
+    left:79.5rem;
+    animation:animated-dots;
+    animation-duration: 3S;
+    animation-iteration-count: infinite;
+    animation-delay: 3s;
+    animation-timing-function: ease-out;
+  }
+  .dot-4{
+    min-width:1.5625rem;
+    min-height:1.5625rem;
+    z-index: 4;
+    border-radius: 50%;
+    background-color:$red ;
+    position: absolute;
+    top:-37rem;
+    left:84.56rem;
+    animation:animated-dots;
+    animation-duration: 3S;
+    animation-iteration-count: infinite;
+    animation-delay: 1.5s;
+    animation-timing-function: ease-out;
+  }
+  .dot-5{
+    min-width:1.5625rem;
+    min-height:1.5625rem;
+    z-index: 4;
+    border-radius: 50%;
+    background-color:$red ;
+    position: absolute;
+    top:-35.31rem;
+    left:89.37rem;
+    animation:animated-dots;
+    animation-duration: 3S;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+    animation-timing-function: ease-out;
+  }
+  .dot-6{
+    min-width:1.5625rem;
+    min-height:1.5625rem;
+    z-index: 4;
+    border-radius: 50%;
+    background-color:$red ;
+    position: absolute;
+    top:-31.87rem;
+    left: 92.81rem;
+    animation:animated-dots;
+    animation-duration: 3S;
+    animation-iteration-count: infinite;
+    animation-delay: 3.5s;
+    animation-timing-function: ease-out;
+    
+  }
+}
+
+  
+  // text animation
+
+   .loader-1,
+   .loader-2,
+   .loader-3,
+   .loader-4,
+   .loader-5,
+   .loader-6{
+    position: relative;
+    font-size: 0.8rem;
+    color: $blue;
+    
+  }
+  // positions
+  .position-1{
+    position: absolute;
+    top:25rem;
+    left:27rem;
+    z-index: 1;
+  }
+  .position-2{
+    position: absolute;
+    z-index: 1;
+    left:4rem;
+    top:32.5rem;
+  }
+  .position-3{
+    position: absolute;
+    z-index: 1;
+    top:42.5rem;
+    left:29rem;
+  }
+  .position-4{
+    position: absolute;
+    z-index: 1;
+    top:44.68rem;
+    left:29rem;
+  }
+  .position-5{
+    position: absolute;
+    z-index: 1;
+    top:48rem;
+    left:2.2rem;
+  }
+
+  .position-6{
+    position: absolute;
+    z-index: 1;
+    top:57rem;
+    left:16.87rem;
+  }
+
+
+
+  .loader-1 span,
+  .loader-2 span,
+  .loader-3 span,
+  .loader-4 span,
+  .loader-5 span,
+  .loader-6 span{
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+    animation: animate 2s ease-in-out infinite;
+    animation-delay: calc(0.1s * var(--i));
+    animation-play-state: paused;
+  }
+  .loader-1:hover span,
+  .loader-2:hover span,
+  .loader-3:hover span,
+  .loader-4:hover span,
+  .loader-4:hover span,
+  .loader-5:hover span,
+  .loader-6:hover span{
+    animation-play-state: running;
+  }
+    @keyframes animate
+    {
+      0%,40%,100%{
+        transform: translateY(0);
+      }
+      20%{
+        transform: translateY(-3.12rem);
+      }
+    }
+    // straberry animation
+    .strawberry-container{
+      position:relative;
+    }
+
+    .sky{
+      margin-top: -24.37rem;
+      margin-left:3.12rem;
+    }
+.strawberry{
+  z-index: 1;
+  position: absolute;
+  top: -28.75rem;
+  left:-11.25rem;
+  max-width:75rem;
+}
+  //  logo section text
+  .logo-text{
+    margin-left:35.62rem;
+    color: $green;
+    margin-top:6.25rem;
+    font-family:'robinson-light';
+    font-size: 2.5rem;
+    letter-spacing:0.125rem;
+  }
+  .logo-p{
+    @include text;
+    max-width: 50ch;
+    margin-left:68.75rem;
+  }
+
+ .img-3 >img{
+  max-width: 56.81rem;
+  margin-left:3.125rem;
+  margin-top:8.125rem;
+
+ }
+.position{
+  position: relative;
+  .img-3{
+    max-width:6.25rem;
+    top:6.25rem;
+    left: 62.5rem;
+  }
+
+
+
+.visual-len{
+  position: relative;
+ 
+
+
+  h1{
+    position: absolute;
+    right: 8.12rem;
+    top: -39.37rem;
+   }
+   p{
+    @include text;
+    position: absolute;
+    max-width:57ch;
+    right: 6.25rem;
+    top:-33.12rem;
+   }
+   
+}
+
+}
+
+.image-5{
+ position: relative;
+
+ img{
+  max-width:107.5rem;
+  position: absolute;
+  top: 96.25rem;
+  left:-0.25rem;
+ }
+}
+
+.image-7{
+  position: relative;
+   img {
+    position: absolute;
+    top:168.12rem;
+}
+}
+// text anim 
+.text-anim{
+  position: relative;
+  top:158.12rem;
+  left:22.81rem;
+  font-size: 5rem;
+  color: $green;
+  text-shadow: 0 0 0.625rem $green;
+  letter-spacing:0.18rem;
+  
+}
+
+.text-anim::after{
+  content: '|';
+  position: absolute;
+  color: transparent;
+  background:#faf9f6;
+  right: 45rem;
+  width: 62.5rem;
+  animation: typing 4s linear alternate infinite,
+  line 1s infinite;
+}
+@keyframes typing {
+  to{
+    width: 0%
+  }
+}
+@keyframes line {
+  0%{
+    color: transparent;
+  }
+  
+}
+
+
+// media queries
+@import 'media';
+ 
+ 
